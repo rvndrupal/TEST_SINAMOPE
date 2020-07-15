@@ -123,7 +123,97 @@ Descargar_pdf
     recursos.Dormir  1
     recursos.Click  //input[contains(@id,'sinamope:btnImprimir')]
     recursos.Dormir  2
-    
+
+
+Descargar_pdf_ok
+    Esperar Iniciar Forzar    10
+    [Arguments]     ${arg1}     ${arg2}
+     #Video Iniciar 
+    Esperar Iniciar ok    5
+    Dormir Todos  ${tiempo}
+    Abrir navegador  ${arg1}   ${arg2}  
+    Maximizar 
+    Click   //*[@id="details-button"]
+    Click   //*[@id="proceed-link"]
+    Texto  (//input[@class='form-control'])[1]      ${usr1}
+    Texto   (//input[@class='form-control'])[2]     ${pass1}
+    Click  //input[@id='sinamope:btnEntrar']
+    Dormir    1
+    recursos.Click  (//a[@data-advertencia='no'][contains(.,'Movilización')])[1]
+    recursos.Dormir  1
+    recursos.Click  //a[contains(@id,'sinamope:lnkMovilizacionAnimales')]
+    recursos.Dormir  2
+    ${rows}=   Leer numero de filas  Hoja1
+    : FOR  ${i}  IN RANGE     1  ${rows}+1
+    \   ${usuario}=   Leer celda  Hoja1  ${i}  1
+    #\   ${s1}=   Leer celda  Hoja1  ${i}  2
+    \   ${direccion}=   Leer celda  Hoja1  ${i}  3
+    #\   ${s2}=   Leer celda  Hoja1  ${i}  4
+    \   recursos.Texto  (//input[contains(@type,'text')])[1]  ${usuario}
+    \   recursos.Click  (//input[contains(@type,'button')])[1]
+    \   Dormir   1
+    \   recursos.SLI  (//select[contains(@class,'form-control')])[4]  2
+    \   recursos.Dormir  1
+    \   recursos.Click  //a[contains(@id,'sinamope:dtSucursales:0:lnkSelSucursal')]
+    \   recursos.Dormir  1
+    \   recursos.Texto  (//input[contains(@class,'form-control')])[2]   ${direccion}
+    \   recursos.Dormir  1
+    \   recursos.Click  (//input[contains(@type,'button')])[2]
+    \   recursos.Dormir  1
+    \   recursos.SLI   (//select[contains(@class,'form-control')])[4]  2
+    \   recursos.Dormir  1
+    \   recursos.Click  //a[@title='Seleccionar sucursal']
+    \   #segunda seccion
+    \   recursos.Scroll  0  500
+    \   recursos.Dormir  2
+    \   #recursos.Click  (//input[contains(@value,'6')])[1]   //*[@id="sinamope:tiposEspecie:4:especie"]
+    \   recursos.Click   //*[@id="sinamope:tiposEspecie:4:especie"]
+    \   recursos.Dormir  2
+    \   recursos.Texto  (//input[contains(@type,'text')])[4]  10
+    \   recursos.SLI  (//select[contains(@class,'form-control')])[1]  3
+    \   recursos.Dormir  1
+    \   recursos.SLI  (//select[contains(@class,'form-control')])[2]  3
+    \   recursos.SLI  (//select[contains(@class,'form-control')])[3]  1
+    \   #tercera sección
+    \   recursos.Scroll  0  1300
+    \   recursos.Dormir  1
+    \   recursos.Click  (//input[contains(@value,'1')])[2]
+    \   recursos.Dormir  1
+    \   recursos.SLI  (//select[contains(@class,'form-control')])[4]   5
+    \   recursos.Click  (//input[contains(@value,'4')])[2]
+    \   recursos.Dormir  1
+    \   recursos.Texto  (//input[contains(@type,'text')])[7]  NISSAN
+    \   recursos.Texto  (//input[contains(@type,'text')])[8]  HTRG-345
+    \   recursos.Dormir  1
+    \   recursos.Scroll  0  1700
+    \   recursos.Dormir  1
+    #cuarta sección
+    \   recursos.Texto  (//input[contains(@type,'text')])[11]  ok
+    \   recursos.Texto  (//input[contains(@type,'text')])[12]    X173126
+    \   recursos.Dormir  1
+    \   recursos.Scroll  0  2000
+    \   recursos.Dormir  1
+    \   recursos.Click  (//input[contains(@type,'submit')])[1]
+    \   recursos.Dormir  1
+    #vista previa
+    \   recursos.Scroll  0  250
+    \   recursos.Click  (//input[contains(@type,'submit')])[2]
+    \   recursos.Dormir  3
+    #guardar
+    \   recursos.Scroll  0  900
+    \   recursos.Dormir  1
+    \   recursos.Click  (//input[contains(@type,'submit')])[2]
+    \   recursos.Dormir  1
+    \   recursos.Click  //input[contains(@id,'sinamope:btnImprimir')]
+    \   recursos.Dormir  2
+    \   recursos.Click  (//a[@data-advertencia='no'][contains(.,'Movilización')])[1]
+    \   recursos.Dormir  1
+    \   recursos.Click    //*[@id="Movilizacion_animales"]/a
+    \   recursos.Dormir  2
+    \   recursos.Click  (//input[contains(@type,'submit')])[6]
+    \   recursos.Dormir  2
+    Cerrar
+
 
 
 

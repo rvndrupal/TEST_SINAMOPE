@@ -51,7 +51,7 @@ CC001 SINAMOPE (SISTEMA SINAMOPE)(DESCARGAR REPORTE PDF)
     [Tags]      s001
     Esperar Iniciar ok    35 
     #Video Iniciar  
-    Descargar_pdf   ${url}  ${navegador}
+    Descargar_pdf_ok   ${url}  ${navegador}
     # Calendario
     # Catalagos Categorías Excel
     # # Catalogos Organizaciones
