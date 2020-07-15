@@ -24,7 +24,7 @@ Library     FakerLibrary
 #excel con pabot
 
 #robot -d resultados -i s001 sinamope.robot
-#pabot --processes 9 --outputdir resultados_sinamope  sinamope*.robot
+#pabot --processes 5 --outputdir resultados_sinamope  TEST/test*.robot
 
 
 

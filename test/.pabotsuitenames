@@ -1,6 +1,13 @@
-datasources:81f1a061f9cff32aacbab6dcd17403be1fd62eb1
+datasources:a6543306d137b7868c02558492ba456d11f557e9
 commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
 suitesfrom:no-suites-from-option
-file:efe2eac8836837ab97f5c841d3ef8dae812541eb
---suite Suites.Ssjae
---suite Suites.Ssjae2
+file:db70be8a0d302a69b25eb4e98b3cd5095c372eaf
+--suite Suites.Sinamope
+--suite Suites.Sinamope2
+--suite Suites.Sinamope3
+--suite Suites.Sinamope4
+--suite Suites.Sinamope5
+--suite Suites.Sinamope6
+--suite Suites.Sinamope7
+--suite Suites.Sinamope8
+--suite Suites.Sinamope9
