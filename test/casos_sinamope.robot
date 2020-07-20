@@ -20,7 +20,7 @@ ${usr1}     diego.garcia
 ${usr2}     eugenia.villanueva
 ${pass1}    lib18
 
-${reg}      1
+${reg}      4
 
 
 
@@ -126,7 +126,7 @@ Descargar_pdf
 
 
 Descargar_pdf_ok
-    Esperar Iniciar Forzar    10
+    Esperar Iniciar Forzar    15
     [Arguments]     ${arg1}     ${arg2}
      #Video Iniciar 
     Esperar Iniciar ok    5
@@ -164,11 +164,13 @@ Descargar_pdf_ok
     \   recursos.Dormir  1
     \   recursos.Click  //a[@title='Seleccionar sucursal']
     \   #segunda seccion
-    \   recursos.Scroll  0  500
+    \   recursos.Scroll  0  600
     \   recursos.Dormir  2
-    \   #recursos.Click  (//input[contains(@value,'6')])[1]   //*[@id="sinamope:tiposEspecie:4:especie"]
-    \   recursos.Click   //*[@id="sinamope:tiposEspecie:4:especie"]
+    #\   recursos.Click  (//input[contains(@value,'6')])[1]
+    \   recursos.Click  //*[@id="sinamope:j_idt165:4:especie"]
+    \   #recursos.Click   //*[@id="sinamope:tiposEspecie:4:especie"]
     \   recursos.Dormir  2
+    \   recursos.Scroll  0  800
     \   recursos.Texto  (//input[contains(@type,'text')])[4]  10
     \   recursos.SLI  (//select[contains(@class,'form-control')])[1]  3
     \   recursos.Dormir  1
@@ -212,6 +214,7 @@ Descargar_pdf_ok
     \   recursos.Dormir  2
     \   recursos.Click  (//input[contains(@type,'submit')])[6]
     \   recursos.Dormir  2
+    \   Run Keyword If  '${i}'=='${reg}'     Exit For Loop
     Cerrar
 
 
