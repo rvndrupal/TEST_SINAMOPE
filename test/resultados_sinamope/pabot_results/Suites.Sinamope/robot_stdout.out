@@ -3,16 +3,14 @@ Suites
 ==============================================================================
 Suites.Sinamope :: Casos de Prueba Proyecto SINAMOPE                          
 ==============================================================================
-CC001 SINAMOPE (SISTEMA SINAMOPE)(DESCARGAR REPORTE PDF) :: PRUEBA... | FAIL |
-ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=83.0.4103.116)
+CC001 SINAMOPE (SISTEMA SINAMOPE)(DESCARGAR REPORTE PDF) :: PRUEBA... | PASS |
 ------------------------------------------------------------------------------
-Suites.Sinamope :: Casos de Prueba Proyecto SINAMOPE                  | FAIL |
-1 critical test, 0 passed, 1 failed
-1 test total, 0 passed, 1 failed
+Suites.Sinamope :: Casos de Prueba Proyecto SINAMOPE                  | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
 ==============================================================================
-Suites                                                                | FAIL |
-1 critical test, 0 passed, 1 failed
-1 test total, 0 passed, 1 failed
+Suites                                                                | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
 ==============================================================================
 Output:  C:\TEST_SINAMOPE\test\resultados_sinamope\pabot_results\Suites.Sinamope\output.xml

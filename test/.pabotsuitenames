@@ -1,13 +1,7 @@
-datasources:a6543306d137b7868c02558492ba456d11f557e9
+datasources:19675a74f9690b6db105eed2cd44a54536aa5ae2
 commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
 suitesfrom:no-suites-from-option
-file:db70be8a0d302a69b25eb4e98b3cd5095c372eaf
+file:a64936072de097718b067d49a5a1bcc0e633376c
 --suite Suites.Sinamope
 --suite Suites.Sinamope2
 --suite Suites.Sinamope3
---suite Suites.Sinamope4
---suite Suites.Sinamope5
---suite Suites.Sinamope6
---suite Suites.Sinamope7
---suite Suites.Sinamope8
---suite Suites.Sinamope9
