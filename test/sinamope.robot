@@ -20,7 +20,7 @@ Library     FakerLibrary
 
 
 
-#pabot --processes 2 --outputdir  resultados_multiples  ssjae*.robot
+
 #excel con pabot
 
 #robot -d resultados -i s001 sinamope.robot

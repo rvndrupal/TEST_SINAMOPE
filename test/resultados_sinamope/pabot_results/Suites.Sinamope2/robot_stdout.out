@@ -3,14 +3,15 @@ Suites
 ==============================================================================
 Suites.Sinamope2 :: Casos de Prueba Proyecto SINAMOPE                         
 ==============================================================================
-CC001 SINAMOPE (SISTEMA SINAMOPE)(DESCARGAR REPORTE PDF) :: PRUEBA... | PASS |
+CC001 SINAMOPE (SISTEMA SINAMOPE)(DESCARGAR REPORTE PDF) :: PRUEBA... | FAIL |
+NoSuchElementException: Message: Could not locate element with index 3
 ------------------------------------------------------------------------------
-Suites.Sinamope2 :: Casos de Prueba Proyecto SINAMOPE                 | PASS |
-1 critical test, 1 passed, 0 failed
-1 test total, 1 passed, 0 failed
+Suites.Sinamope2 :: Casos de Prueba Proyecto SINAMOPE                 | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
 ==============================================================================
-Suites                                                                | PASS |
-1 critical test, 1 passed, 0 failed
-1 test total, 1 passed, 0 failed
+Suites                                                                | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
 ==============================================================================
 Output:  C:\TEST_SINAMOPE\test\resultados_sinamope\pabot_results\Suites.Sinamope2\output.xml
